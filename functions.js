@@ -42,5 +42,5 @@ function sCount() {
 
 
 function setup() {
-	script INLINE @{“set ambientpercent 50; cartoon only; color structure”}
+	script INLINE @{“set specular on; set specularpower 50;set diffusepercent 100; set ambientpercent 50; cartoon only; color structure”}
 }
