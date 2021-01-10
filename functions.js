@@ -39,6 +39,15 @@ function sCount() {
 	}
 }
 
+function seqAA(start, end, chain) {
+	var sequence = script("select " + start + "-" + end + " and :"  + chain + ";show groups")
+	result = ""
+	for (var i = 1; i < sequence.length - 1; i++) {
+		result += sequence[i] + ", "
+	}
+	
+	print(result + sequence[-1])
+}
 
 
 function setup() {
